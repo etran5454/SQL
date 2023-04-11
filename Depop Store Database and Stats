@@ -1,0 +1,26 @@
+--Create a Depop store database
+
+CREATE TABLE depop (id INTEGER PRIMARY KEY, item TEXT, price_bought INTEGER, price_sold INTEGER, size TEXT);
+
+INSERT INTO depop VALUES (1, "shirt", 2, 20, "small");
+INSERT INTO depop VALUES (2, "jeans", 5, 30, "medium");
+INSERT INTO depop VALUES (3, "dress", 7, 35, "small");
+INSERT INTO depop VALUES (4, "jeans", 5, 30, "medium");
+INSERT INTO depop VALUES (5, "shirt", 2, 20, "small");
+INSERT INTO depop VALUES (6, "jeans", 5, 30, "medium");
+INSERT INTO depop VALUES (7, "shirt", 2, 20, "small");
+INSERT INTO depop VALUES (8, "jeans", 5, 30, "medium");
+INSERT INTO depop VALUES (9, "shirt", 2, 20, "small");
+INSERT INTO depop VALUES (10, "jeans", 5, 30, "medium");
+INSERT INTO depop VALUES (11, "shirt", 2, 20, "small");
+INSERT INTO depop VALUES (12, "jeans", 5, 30, "medium");
+INSERT INTO depop VALUES (13, "shirt", 2, 20, "small");
+INSERT INTO depop VALUES (14, "jeans", 5, 30, "medium");
+INSERT INTO depop VALUES (15, "shirt", 2, 20, "small");
+
+--display the database ordered by price sold. 
+SELECT * FROM depop
+ORDER BY price_sold;
+
+--what is the total price sold?
+SELECT sum(price_sold) FROM depop;
